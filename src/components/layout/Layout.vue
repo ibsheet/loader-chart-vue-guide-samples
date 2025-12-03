@@ -88,10 +88,10 @@
       <!-- Copyright Section -->
       <div class="copyright-section bg-grey-9 text-white">
         <div class="copyright-content">
-          <span>&copy; 2025 IBSheet8 Vue Guide Sample</span>
+          <span>&copy; {{ currentYear }} IBSheet8 Vue Guide Sample</span>
         </div>
         <div class="copyright-content">
-            <span>Copyright &copy; IBChart 2025</span>
+            <span>Copyright &copy; IBChart {{ currentYear }}</span>
         </div>
       </div>
     </q-footer>
