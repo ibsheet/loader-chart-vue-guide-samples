@@ -26,6 +26,11 @@ if (typeof window !== 'undefined') {
   window.Highcharts = Highcharts;
 }
 
+const ibchartLib = {
+  name: 'ibchart',
+  baseUrl: 'https://www.ibsheet.com/v8/assets/lib/ibchart/'
+}
+
 export default {
   name: 'App',
   components: {
@@ -33,12 +38,7 @@ export default {
   },
   mounted() {
     loader.config({
-      registry: [
-        {
-          name: 'ibchart',
-          baseUrl: 'https://www.ibsheet.com/v8/assets/lib/ibchart/'
-        }
-      ]
+      registry: [ibchartLib]
     });
   },
 }
