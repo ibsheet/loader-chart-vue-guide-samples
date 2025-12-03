@@ -21,10 +21,8 @@ const initModule = (module, hc) => {
 initModule(HighchartsMore, Highcharts);
 initModule(SeriesLabel, Highcharts);
 
-// Highcharts를 전역으로 등록 (IBChart에서 사용)
-if (typeof window !== 'undefined') {
-  window.Highcharts = Highcharts;
-}
+// Highcharts를 전역 객체에 설정
+if (typeof window !== 'undefined') window.Highcharts = Highcharts;
 
 const ibchartLib = {
   name: 'ibchart',
